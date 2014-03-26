@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
     <script type="text/javascript">
-        function schimbaNume(obiectID, valoare)
+        function cripteaza(obiectID, valoare)
         {
             document.getElementById(obiectID).value = valoare;
         }
@@ -18,7 +18,7 @@
         <input type="text" name="txtHTML" value="Un text special" id="idHTML" />
         <asp:TextBox runat="server" ID="txtNume" />
         <input type="button" name="btnSchimba" id="idSchimba" value="Schimba Numele" onclick="schimbaNume('txtNume','Marian');" />
-        <asp:Button ID="btnExecutaServer" runat="server" Text="Button" />
+        <asp:Button ID="btnExecutaServer" runat="server" Text="Trimite date" />
         <br />
         <br />
         <asp:Literal ID="litAfisare" runat="server"></asp:Literal>
